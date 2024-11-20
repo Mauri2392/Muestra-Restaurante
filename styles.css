@@ -1,0 +1,347 @@
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+body {
+    background-color:  rgb(229, 233, 236);
+} 
+
+
+/* 
+.portada { 
+    height: 30vh;
+    background-color: pink;
+    background-image: url(./img/papas\ fritas.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative; 
+    max-width: 700px;
+    margin: 0 auto;  
+} */ 
+
+/* 
+.portada img {
+    width: 700px;
+    margin: 0 auto;
+    height: 30vh;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+} */ 
+
+
+.header-section {
+    text-align: center;
+   /* padding: 20px; */
+    background-color: #f8f9fa;
+    max-width: 700px;
+    margin: 0 auto; /* Centrar la sección */ 
+    position: relative; /* Para posicionar elementos dentro del contenedor */
+}
+
+.header-img {
+    width: 100%;
+    height: 30vh; /* Altura de la imagen */
+    object-fit: cover; /* Para asegurar que la imagen cubra el espacio disponible */
+    max-width: 700px; /* Ancho máximo de la imagen */
+} 
+
+.flags-container {
+    position: absolute;
+    top: 10px; /* Distancia desde la parte superior */
+    right: 10px; /* Distancia desde la parte derecha */
+    display: flex; 
+    flex-direction: column;
+    gap: 20px; /* Espacio entre las banderas */
+}
+
+.flag-icon {
+    width: 30px; /* Tamaño de las banderas */
+    height: 20px;
+    object-fit: contain; /* Asegura que las imágenes mantengan su proporción */
+    border: 1px solid #ddd; /* Opcional: borde alrededor de las banderas */
+    border-radius: 3px; /* Opcional: bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre las banderas */
+}
+
+.flag-icon:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+    transition: transform 0.2s ease-in-out; /* Animación suave */
+}
+
+.logo-container img {
+    width: 150px;
+    height: 150px;
+    margin-top: -75px; 
+    border-radius: 20%;
+} 
+
+.inform {
+  /*  padding: 20px 0; */
+    margin-top: 20px;
+} 
+
+.inform h1 {
+    padding-bottom: 20px;
+} 
+
+.inform p {
+    padding-bottom: 20px;
+} 
+
+.button-container {
+    display: flex;
+    overflow-x: auto;  /* Habilitar scroll horizontal */
+   /* overflow-x: hidden; */ /* Esconde scroll horizontal */
+    white-space: nowrap; /* Evitar que los botones se envuelvan en líneas */
+    max-width: 700px;
+    margin: 0px auto; /* Centrar el contenedor de botones */
+    background-color: #f8f9fa;
+    z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+    padding: 10px 0;
+    position: -webkit-sticky; /* Compatibilidad con navegadores Webkit */
+    position: sticky;
+    top: 0; /* Para mantenerlo fijo en la parte superior de la ventana al hacer scroll */ 
+    scrollbar-width: none; /* Opcional: Oculta la barra de desplazamiento en navegadores compatibles */
+} 
+
+.button-container::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento en navegadores Webkit */
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 5px 5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    background-color: #007bff; /* Color azul */
+    border: none;
+    border-radius: 4px;
+    margin: 5px;  /* Para agregar espacio entre los botones */
+}
+
+.nav-link.active {
+    background-color: #0056b3;  /* Azul más oscuro para el estado activo */
+}
+
+.nav-link:hover {
+    background-color: #0056b3;  /* Azul más oscuro en hover */
+} 
+
+/*
+.principal {
+    max-width: 800px; 
+    margin: 0 auto;
+    text-align: center;
+    background-color: blueviolet; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 50px;  
+} */
+
+#pizza {
+    max-width: 700px; 
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(229, 233, 236);
+}
+
+.contenedor {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: rgb(229, 233, 236);
+    display: flex;
+    flex-direction: column; 
+} 
+
+.contenedor h3 { 
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 35px; 
+    margin-top: 20px;
+    margin-bottom: 10px; 
+} 
+
+.contenedor p {
+    display: flex;
+    justify-content: flex-start; 
+    margin-left: 35px; 
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.cajas {
+    width: 99%; 
+    margin: 0 auto; 
+    border-radius: 5px;
+    background-color: white;
+    display: flex; 
+    border-bottom: 1px solid rgb(94, 94, 94); 
+    cursor: pointer;
+   /* margin-bottom: 0px; */
+    /* height: 100px; */
+    /*  margin-top: 0px; */
+} 
+
+.cajas img {
+  /*  margin-top: 10px; */
+    width: 120px;
+    height: 120px; 
+    border-radius: 15px;
+    padding: 10px; 
+    padding-right: 0px;
+}
+
+
+.info {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    text-align: left; 
+    margin-top: 5px; 
+    padding: 10px;
+} 
+
+.info p {
+    font-size: 14px;
+    margin-left: 0px;
+}
+
+.info p span {
+    font-size: 14px;
+    font-weight: 600;
+} 
+
+/*
+.info p:nth-child(2) { 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    max-width: 700px;
+    display: inline-block; 
+} */
+
+hr {
+    border: solid .5px rgb(216, 202, 202);
+    width: 100%;
+} 
+
+footer {
+    background-color: rgb(229, 233, 236); 
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    max-width: 700px; 
+    margin: 0 auto; 
+    padding: 50px; 
+    padding-bottom: 20px;
+} 
+
+footer p {
+    font-size: 16px;
+    padding: 5px;
+} 
+
+footer img {
+    width: 150px;
+    height: 150px; 
+    border-radius: 20%;
+} 
+
+footer i {
+    font-size: 22px;
+}
+
+.horarios,
+.ubicacion, 
+.contacto, 
+.email, 
+.redes  { 
+    color: rgb(83, 81, 81);
+    font-weight: 600; 
+    margin: 30px; 
+} 
+
+.redes i {
+    cursor: pointer;
+    font-size: 25px;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: #007bff;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+   /* width: 80%; */
+   /* height: 350px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal-title,
+.modal-desc,
+.modal-price {
+    color: #000;
+    margin: 5px 0;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.modal-content img {
+    width: 90%; 
+    height: 150px;
+    margin: 0 auto;
+    /* height: 80%;*/
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+} 
+
+.iframe {
+    text-align: center;
+}

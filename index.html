@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Restaurant Muestra</title>
+    <!-- iconos boostrap --> 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    /> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+</head> 
+<body> 
+    <!--
+    <section class="portada"> 
+    </section> 
+    -->
+
+    <section class="header-section">
+        <img src="./img/img heder.jpg" alt="Imagen encabezado" class="header-img">
+        <!--
+        <div class="logo-container">
+            <img src="./img/Logo Sencillo Neón para Bar.png" alt="Logo" class="logo">
+        </div>  
+        -->
+
+        <div class="inform">
+            <h1>Bienvenido a Nuestro Restaurante</h1>
+            <p>Descubre nuestros deliciosos platos y disfruta de una experiencia única.</p>
+        </div>
+
+        <div class="flags-container">
+            <a href="index.html">
+                <img src="./img/Bandera_de_España.svg.png" alt="Español" class="flag-icon">
+            </a>
+            <a href="english.html">
+                <img src="./img/Flag_of_Great_Britain_(1707–1800).svg.png" alt="English" class="flag-icon">
+            </a>
+            <a href="italian.html">
+                <img src="./img/Flag_of_Italy.svg.png" alt="Italian" class="flag-icon">
+            </a>
+        </div>
+    </section> 
+
+
+    <div class="button-container">
+        <a href="#pizza" class="nav-link">Pizzas</a>
+        <a href="#hamburguesas" class="nav-link">Hamburguesas</a> 
+        <a href="#ensaladas" class="nav-link">Ensaladas</a> 
+        <a href="#entrantes" class="nav-link">Entrantes</a> 
+        <a href="#carnes" class="nav-link">Carnes</a> 
+        <a href="#postres" class="nav-link">Postres</a>
+        <a href="#bebidas" class="nav-link">Bebidas</a> 
+    </div>
+
+
+    <section id="pizza">
+        <div class="contenedor">
+            <h3>Pizzas</h3>
+
+            <div class="cajas" onclick="openModal(this)"> 
+                <div class="imagen">
+                    <img src="./img/1-pizza/pizza.jpeg" alt="" > 
+                </div>
+                <div class="info"> 
+                    <p><span>Comun</span></p>
+                    <p> La combinacion ideal del sabor italiano en una pizza de jamon y queso.</p>
+                    <p><span>5 euros</span></p>
+                </div>
+            </div> 
+
+            <div class="cajas" onclick="openModal(this)"> 
+                <div class="imagen">
+                    <img src="./img/1-pizza/pizza.jpeg" alt=""  > 
+                </div>
+                <div class="info">
+                    <p><span>Peperoni</span></p>
+                    <p>La combinación ideal del sabor italiano en una pizza de pepperoni con sus respectivas especias.</p>  
+                    <p><span>5 euros</span></p>
+                </div> 
+            </div> 
+
+<!--        <div class="cajas" onclick="openModal(this)"> 
+                <div class="imagen">
+                    <img src="./img/1-pizza/pizza.jpeg" alt=""  > 
+                </div>
+    
+              <div class="info">
+                    <p><span>Napolitana</span></p>
+                    <p>Queso, tomate, ajo.</p>  
+                    <p>5 euros</p>
+                </div>
+            </div> 
+
+            <div class="cajas" onclick="openModal(this)"> 
+                <div class="imagen">
+                    <img src="./img/1-pizza/pizza.jpeg" alt=""  > 
+                </div>
+    
+                <div class="info">
+                    <p><span>Vegetales</span></p>
+                    <p>Pizza hecha para el amante de los vegetales o de un gusto vegetariano, conservando los sabores marcados de las carnes.</p>  
+                    <p>5 euros</p>
+                </div>
+            </div> 
+
+            <div class="cajas" onclick="openModal(this)"> 
+                <div class="imagen">
+                    <img src="./img/1-pizza/pizza.jpeg" alt=""  > 
+                </div>
+    
+                <div class="info">
+                    <p><span>Queso</span></p>
+                    <p>Pizza hecha específicamente con el sabor predominante del queso, agregando especias y demás ingredientes.</p>  
+                    <p>5 euros</p>
+                </div>
+            </div> 
+
+            <div class="cajas" onclick="openModal(this)"> 
+                <div class="imagen">
+                    <img src="./img/1-pizza/pizza.jpeg" alt=""  > 
+                </div>
+    
+                <div class="info">
+                    <p><span>Papa</span></p>
+                    <p>Pizza meramente hecha con el principal de sabor de la papa, cuidando sus sabores y combinaciones con diversas especias.</p>  
+                    <p>5 euros</p>
+                </div>
+            </div> -->
+        </div> 
+    </section> 
+
+
+    <section id="hamburguesas">
+        <div class="contenedor">
+            <h3>Hamburguesas</h3>
+            <p>Todas Vienen con papas y Bebida a eleccion</p>
+            <div class="cajas" onclick="openModal(this)"> 
+                <div class="imagen">
+                    <img src="./img/2-burguers/hamburguesa.jpeg" alt=""  > 
+                </div>
+                <div class="info">
+                    <p><span>Bacon</span></p>
+                    <p>Hamburguesa con Tocino, Salsa BBQ y 250g de Carne de Sirloin.
+                    </p>
+                    <p>5 euros</p>
+                </div>
+            </div> 
+            
+            <div class="cajas" onclick="openModal(this)"> 
+                <div class="imagen">
+                    <img src="./img/2-burguers/hamburguesa.jpeg" alt="" > 
+                </div>  
+                <div class="info">
+                    <p><span>Vegetariana</span></p>
+                    <p>Hamburguesa 100% Vegetariana con ingredientes naturales respetando el sabor tradicional de una hamburguesa.</p>
+                    <p>5 euros</p>
+                </div>
+            </div> 
+        </div> 
+    </section> 
+
+
+    <section id="ensaladas"> 
+        <div class="contenedor">
+            <h3>Ensaladas</h3>
+            <div class="cajas" onclick="openModal(this)"> 
+                <div class="imagen">
+                    <img src="./img/3-ensaladas/mediterranea.webp" alt=""  > 
+                </div>
+
+                <div class="info">
+                    <p><span>mediterranea</span></p>
+                    <p>Tomates cherry, pepino, pimientos, aceitunas kalamata, cebolla roja y queso.</p>
+                    <p>5 euros</p>
+                </div>
+            </div> 
+            
+            <div class="cajas" onclick="openModal(this)"> 
+                <div class="imagen">
+                    <img src="./img/3-ensaladas/tomate.webp" alt=""  > 
+                </div>
+
+                <div class="info">
+                    <p><span>Tomate</span></p>
+                    <p>Jugosos tomates cortados en rodajas con oregano.</p>
+                    <p>5 euros</p>
+                </div>
+            </div> 
+        </div> 
+    </section> 
+
+
+    <section id="entrantes"> 
+        <div class="contenedor">
+            <h3>Entrantes</h3>
+            <div class="cajas" onclick="openModal(this)"> 
+                <div class="imagen">
+                    <img src="./img/4-entrantes/calamares.jpeg" alt=""  > 
+                </div>
+
+                <div class="info">
+                    <p><span>Calamares</span></p>
+                    <p>Los mejores calamares del mediterraneo.</p>
+                    <p>5 euros</p>
+                </div>
+            </div> 
+            
+            <div class="cajas" onclick="openModal(this)"> 
+                <div class="imagen">
+                    <img src="./img/4-entrantes/papas fritas.webp" alt=""  > 
+                </div>
+
+                <div class="info">
+                    <p><span>Patatas Fritas</span></p>
+                    <p>Crujientes patatas fritas doradas</p>
+                    <p>5 euros</p>
+                </div>
+            </div> 
+        </div> 
+    </section> 
+
+
+    <section id="carnes"> 
+        <div class="contenedor">
+            <h3>Carnes</h3>
+            <div class="cajas" onclick="openModal(this)"> 
+                <div class="imagen">
+                    <img src="./img/5-carnes/Costillas De Cerdo A La Barbacoa.webp" alt=""  > 
+                </div>
+
+                <div class="info">
+                    <p><span>Costillas De Cerdo A La Barbacoa</span></p>
+                    <p>Marinadas en una rica y ahumada salsa BBQ</p>
+                    <p>5 euros</p>
+                </div>
+            </div> 
+            
+            <div class="cajas" onclick="openModal(this)"> 
+                <div class="imagen">
+                    <img src="./img/5-carnes/Solomillo de ternera en salsa de champiñones.webp" alt=""  > 
+                </div>
+
+                <div class="info">
+                    <p><span>Solomillo de Ternera</span></p>
+                    <p>Jugosa pieza de carne tierna cocinada a la perfección.</p>
+                    <p>5 euros</p>
+                </div>
+            </div> 
+        </div> 
+    </section> 
+
+
+    <section id="postres"> 
+        <div class="contenedor">
+            <h3>Postres</h3>
+            <div class="cajas" onclick="openModal(this)"> 
+                <div class="imagen">
+                    <img src="./img/6-postres/Flan Casero.webp" alt=""  > 
+                </div>
+
+                <div class="info">
+                    <p><span>Flan</span></p>
+                    <p>Tradicional flan de huevo con caramelo.</p>
+                    <p>5 euros</p>
+                </div>
+            </div> 
+            
+            <div class="cajas" onclick="openModal(this)"> 
+                <div class="imagen">
+                    <img src="./img/6-postres/Cheesecake de Fresas.webp" alt=""  > 
+                </div>
+
+                <div class="info">
+                    <p><span>Cheesecake</span></p>
+                    <p>Cremoso cheesecake con base de galleta y vainilla.</p>
+                    <p>5 euros</p>
+                </div>
+            </div> 
+        </div> 
+    </section> 
+    
+    <section id="bebidas">
+        <div class="contenedor">
+            <h3>Bebidas</h3>
+            <div class="cajas" onclick="openModal(this)"> 
+                <div class="imagen">
+                    <img src="./img/7-bebidas/cccl.jpeg" alt=""  > 
+                </div>
+
+                <div class="info">
+                    <p><span>Coca Cola</span></p>
+                    <p>300ml</p>
+                    <p>5 euros</p>
+                </div>
+            </div> 
+            
+            <div class="cajas" onclick="openModal(this)"> 
+                <div class="imagen">
+                    <img src="./img/7-bebidas/cerve.jpeg" alt=""  > 
+                </div>
+
+                <div class="info">
+                    <p><span>Cerveza</span></p>
+                    <p>300ml</p>
+                    <p>5 euros</p>
+                </div>
+            </div> 
+        </div> 
+    </section> 
+
+    
+    <!-- Modal para la imagen -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <p id="modal-title" class="modal-title"></p>
+            <img id="modal-img">
+            <p id="modal-desc" class="modal-desc"></p>
+            <p id="modal-price" class="modal-price"></p>
+        </div>
+    </div> 
+
+
+    <footer id="footer">
+        <div class="container">
+            <div>
+                <img src="./img/Logo Sencillo Neón para Bar.png" alt="logo">
+            </div> 
+
+            <div class="horarios">
+                <i class="fa-regular fa-clock"></i>
+                <p>Horarios</p>
+                <p>Lunes a Sabados de:</p>
+                <p>8:30 a 20:30</p>
+            </div> 
+
+            <div class="ubicacion">
+                <i class="fa-solid fa-location-dot"></i> 
+                <p>Direccion:</p>
+                <p>Eduardo Torroja 6, Comunidad Valenciana</p>
+            </div> 
+
+            <div class="contacto">
+                <i class="bi bi-telephone"></i> 
+                <p>Contacto</p>
+                <p>+34 634 898234</p>
+            </div> 
+
+            <div class="email">
+                <i class="fa-regular fa-envelope"></i>
+                <p>E-mail</p>
+                <p>tuemail@gmail.com</p>
+            </div> 
+
+            <div class="redes">
+                <p>Redes</p>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </div>
+
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6256.919802062083!2d-0.49446252527677803!3d38.361481078149446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6236fec73adca7%3A0x93a2edc45b079d0d!2sPje.%20Eduardo%20Torroja%2C%206%2C%2003010%20Alicante%20(Alacant)%2C%20Alicante!5e0!3m2!1ses!2ses!4v1731528190498!5m2!1ses!2ses" 
+            width="300" height="300" style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe> 
+        <p>&copy; 2024 Nuestro Restaurante. Todos los derechos reservados.</p> 
+        </div>
+    </footer> 
+
+    <script src="script.js"></script>
+</body>
+</html>
