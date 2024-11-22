@@ -123,7 +123,7 @@ function closeModal() {
 
 // Truncado de texto en el div principal
 document.querySelectorAll('.info p:nth-child(2)').forEach(descriptionElement => {
-    const charLimit = 120;
+    const charLimit = 100;
     const originalText = descriptionElement.textContent;
 
     // Guarda el texto completo en un atributo data-full-text para el modal
